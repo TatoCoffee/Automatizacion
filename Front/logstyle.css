@@ -1,0 +1,112 @@
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    border: 5px solid #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Efecto de hover en el contenedor */
+.contenedor:hover {
+    border: 2px solid transparent;
+    animation: borde 3s ease-in-out infinite;
+}
+
+/* Titulo del formulario */
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Campo de texto */
+input[type="text"], input[type="password"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto de foco en los campos de texto */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #2196F3;
+}
+
+/* Botón de enviar */
+input[type="submit"] {
+    background-color: #2196F3;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover en el botón de enviar */
+input[type="submit"]:hover {
+    background-color: #1565C0;
+}
+
+/* Animación de borde */
+@keyframes borde {
+  0% {
+    border-color: #fff;
+    border-width: 2px;
+  }
+  20% {
+    border-color: #ec09c6;
+    border-width: 2px;
+  }
+  30% {
+    border-color: #c7e909;
+    border-width: 2px;
+  }
+  50% {
+    border-color: #f00;
+    border-width: 4px;
+  }
+  60% {
+    border-color: #04f86a;
+    border-width: 2px;
+  }
+  80% {
+    border-color: #dd5656;
+    border-width: 2px;
+  }
+  100% {
+    border-color: #1000f3;
+    border-width: 2px;
+  }
+}
