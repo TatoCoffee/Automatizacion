@@ -93,3 +93,7 @@ footer {
 	border-top: 1px solid #00ccff;
 	font-size: 14
 }
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
