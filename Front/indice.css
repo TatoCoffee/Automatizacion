@@ -1,0 +1,95 @@
+body {
+	background-color: #191919;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	padding: 20px;
+}
+
+h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #00ccff;
+}
+
+main {
+	padding: 50px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 36px;
+	margin: 0 0 20px 0;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+footer {
+	background-color: #000;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Estilos futuristas */
+header {
+	border-bottom: 1px solid #00ccff;
+}
+
+nav ul li a {
+	font-weight: bold;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+	border: 1px solid #00ccff;
+	box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+}
+
+section {
+	background-color: rgba(0, 204, 255, 0.1);
+	padding: 30px;
+	border: 1px solid #00ccff;
+	box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+}
+
+h2 {
+	font-family: "Orbitron", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #00ccff;
+}
+
+footer {
+	border-top: 1px solid #00ccff;
+	font-size: 14
+}

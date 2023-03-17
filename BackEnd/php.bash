@@ -1,1 +1,0 @@
-Alias /phpmyadmin C:\Users\javier.barrantes\Documents\Proyectos\Automatizacion\BackEnd\phpMyAdmin-5.2.1-all-languages
