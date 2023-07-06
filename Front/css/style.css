@@ -322,3 +322,41 @@ section h2 {
   background-color: #007bff;
   color: white;
 }
+@keyframes fly {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(100px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(200px) translateY(0);
+  }
+}
+
+.animated-item {
+  position: relative;
+}
+
+.animated-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('https://cdn.icon-icons.com/icons2/402/PNG/512/paper-plane_40433.png'); /* Reemplaza 'avion.png' con la ruta a tu imagen de avión de papel */
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.animated-item:hover::before {
+  opacity: 1;
+  animation: fly 1s linear infinite;
+}
+
+.animated-item:active::before {
+  opacity: 1;
+  animation: none; /* Detiene la animación al hacer clic */
+}
