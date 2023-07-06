@@ -1,0 +1,7 @@
+.footer .contact-info{
+    display: none;
+  }
+  .footer.show .contact-info{
+    display: block;
+  }
+  
